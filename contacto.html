@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liga Risaraldense de Boxeo</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<style type="text/css" media="screen">
+		body {
+		  display: flex;
+		  min-height: 100vh;
+		  flex-direction: column;
+		}
+   
+		#wrapper {
+		  flex: 1;
+		}
+        .nav-item{
+            font-size:em;
+        }
+	  </style>
+<!--Menu-->
+<nav class="navbar navbar-expand-lg navbar-dark is-dark static-top">
+	<div class="container">
+	  <a class="navbar-brand" href="#">
+			<img src="src/logo.png" class="img-fluid" alt="Responsive image">
+		  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+	  <div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+		  <li class="nav-item active">
+			<a class="nav-link" href="#">Home
+				  <span class="sr-only">(current)</span>
+				</a>
+		  </li>
+		  <li class="nav-item">
+            <a class="nav-link"href="#">Escuelas de Formación</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Reconocimientos</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="contacto.html">Contacto</a>
+		  </li>
+		</ul>
+	  </div>
+	</div>
+</nav>
+<!--Menu-->
+<!--Slider-->
+<section class="section has-background-grey-lighter is-paddingless">
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 mt-5 bg-light rounded">
+            <h1 class="text-center font-weight-bold text-success">Déjanos tu mensaje</h1>
+            <hr class="bg-light">
+            <h5 class="text-center text-success"></h5>
+            <form action="" method="post" id="form-box" class="p-2">
+              <div class="form-group input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-user"></i></span>
+                </div>
+                <input type="text" name="name" class="form-control" placeholder="Nombre" required>
+              </div>
+              <div class="form-group input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                </div>
+                <input type="email" name="email" class="form-control" placeholder="Email" required>
+              </div>
+              <div class="form-group input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-comment-alt"></i></span>
+                </div>
+                <textarea name="msg" id="msg" class="form-control" placeholder="Mensaje" cols="30" rows="4" required></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" name="submit" id="submit" class="btn btn-success btn-block" value="Enviar">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <br>
+</section>
+<!--Slider-->
+
+
+<footer class="footer has-background-black is-paddingless">
+	<div class="content has-text-centered">
+        <p class="subtitle" style="color: white;">
+            Developed by <strong><a href="https://juanpfrancos.me/" target="_blank" rel="noopener noreferrer">Juanpfrancos</a></strong> 
+          </p>
+	</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script  src="script.js"></script>
+</body>
+</html>
