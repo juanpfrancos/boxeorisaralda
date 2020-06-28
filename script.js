@@ -5,7 +5,6 @@ var swiper = new Swiper('.swiper-container', {
   spaceBetween: 30,
   effect: 'fade',
   pagination: {
-    el: '.swiper-pagination',
     clickable: true,
   },
   autoplay: {
@@ -20,10 +19,9 @@ var swiper = new Swiper('.swiper-container', {
 
 var swiper = new Swiper('.sw-container', {
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 5,
   // init: false,
   pagination: {
-    el: '.swiper-pagination',
     clickable: true,
   },
   breakpoints: {
