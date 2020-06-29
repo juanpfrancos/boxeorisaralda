@@ -33,5 +33,8 @@
   #bghero{
     background-image: url('/src/full.png');
   }
+  #bgform{
+    background-image: url('/src/ring.png');
+  }
 
 
