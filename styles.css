@@ -36,5 +36,8 @@
   #bgform{
     background-image: url('/src/ring.png');
   }
+  #bgdiv{
+    background-image: url('/src/bg.png');
+  }
 
 

@@ -62,7 +62,7 @@ logged_out_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz part
 	  <div class="collapse navbar-collapse" id="navbarResponsive">
 		<ul class="navbar-nav ml-auto">
 		  <li class="nav-item active">
-			<a class="nav-link" href="index.html">Home
+			<a class="nav-link" href="index.html">Inicio
 				  <span class="sr-only">(current)</span>
 				</a>
 		  </li>
@@ -71,9 +71,6 @@ logged_out_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz part
 		  </li>
 		  <li class="nav-item">
 			<a class="nav-link" href="reconocimientos.html">Reconocimientos</a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" href="implementos.html">Implementos</a>
 		  </li>
 		  <li class="nav-item">
 			<a class="nav-link" href="contact.html">Contacto</a>
@@ -85,7 +82,7 @@ logged_out_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz part
 <!--Menu-->
 <!--Slider-->
 <section class="section has-background-grey-lighter is-paddingless">
-	<div class="swiper-container">
+	<div class="principalSlide">
 		<div class="swiper-wrapper">
 		  <div class="swiper-slide">
 			<img src="src/05.png" alt="">
@@ -120,16 +117,25 @@ logged_out_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz part
 	</div>
 </section>
 
-<section class="hero is-medium" id="bghero">
+<section class="hero is-medium">
 	<div class="columns">
-		<div class="column">
-			<img src="./src/cris.png" class="is-rounded" alt="">
-			<h3>Cristian Henao</h3>
-			<h5>Presidente</h5>
+		<div class="column" id="bgdiv">
+			<div class="card" style="opacity: 0.5;">
+				<div class="card-content">
+				  <div class="media">
+					<div class="media-content">
+					  <p class="title is-4">John Smith</p>
+					</div>
+				  </div>
+				  <div class="content">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Phasellus nec iaculis mauris.
+				  </div>
+				</div>
+			  </div>
 		</div>
-		<div class="column">
-			<img src="./src/cris.png" class="is-rounded" alt="">
-			<h3>Cristian Henao</h3>
+		<div class="column" id="bgdiv">
+			<h3>Adquiere Implementos deportivos</h3>
 			<h5>Presidente</h5>
 		</div>
 	  </div>
@@ -161,7 +167,7 @@ logged_out_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz part
 	</div>
 </section>
 <section class="section has-background-white ">
-	<div class="sw-container">
+	<div class="sw-icons">
 		<div class="swiper-wrapper">
 		  <div class="swiper-slide"><a href="https://www.mindeporte.gov.co/" target="_blank" rel="noopener noreferrer"><img src="./src/logos/01.png" alt=""></a></div>
 		  <div class="swiper-slide"><a href="https://www.risaralda.gov.co/" target="_blank" rel="noopener noreferrer"><img src="./src/logos/02.png" alt=""></a></div>
@@ -182,10 +188,26 @@ logged_out_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz part
 	</div>
 </footer>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script  src="script.js"></script>
+<script> 
+var swiper = new Swiper('.principalSlide', {
+  spaceBetween: 30,
+  effect: 'fade',
+  pagination: {
+    clickable: true,
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+</script>
 </body>
 </html>
