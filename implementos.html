@@ -11,6 +11,43 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body class="has-background-white">
+  <div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+	FB.init({
+	  xfbml            : true,
+	  version          : 'v7.0'
+	});
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="2051072465110800"
+theme_color="#13cf13"
+logged_in_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz parte de esta gran familia!🥊 "
+logged_out_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz parte de esta gran familia!🥊 ">
+</div>
+<style type="text/css" media="screen">
+		body {
+		  display: flex;
+		  min-height: 100vh;
+		  flex-direction: column;
+		}
+   
+		#wrapper {
+		  flex: 1;
+		}
+</style>
   <nav class="navbar navbar-expand-lg navbar-dark is-dark static-top">
     <div class="container">
       <a class="navbar-brand" href="">
@@ -22,7 +59,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-        <a class="nav-link" href="">Inicio
+        <a class="nav-link" href="index.html">Inicio
             <span class="sr-only">(current)</span>
           </a>
         </li>
