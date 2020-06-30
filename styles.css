@@ -38,6 +38,11 @@
   }
   #bgdiv{
     background-image: url('/src/bg.png');
+    display: flex;
+    align-items: center;
   }
 
 
+*{
+  font-family: 'Alfa Slab One', cursive;
+}

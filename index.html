@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Liga Risaraldense de Boxeo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet"> 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -100,9 +102,6 @@ logged_out_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz part
 			<img src="src/04.png" alt="">
 		  </div>
 		</div>
-		<!-- Add Arrows -->
-		<div class="swiper-button-next"></div>
-		<div class="swiper-button-prev"></div>
 	</div>
 </section>
 <!--Slider-->
@@ -122,22 +121,17 @@ logged_out_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz part
 
 <section class="hero is-medium">
 	<div class="columns">
-		<div class="column" id="bgdiv" >
-			
-			
-				  <div class="media" style="background-color: white;">
-					<div class="media-content">
-					  <p class="title is-4">John Smith</p>
-					</div>
-				  </div>
-				  <div class="content">
-					Lorem ipsum dolor sit amet,
-				  </div>
-
+		<div class="column" style="background-image: url('/src/bg.png'); display: flex;	align-items: center;">
+			<div style="width: 70%;height: 300px; border-radius: 1em; background-color: rgba(255,255,255,0.5); display: flex;
+			align-items: center;">
+				<h2>Haz parte de nuestras escuelas de formación</h2>
+			</div>
 		</div>
-		<div class="column" id="bgdiv">
-			<h3>Adquiere Implementos deportivos</h3>
-			<h5>Presidente</h5>
+		<div class="column" style="background-image: url('/src/bg.png'); display: flex;	align-items: center;">
+			<div style="padding: 1em; width: 70%;height: 300px; border-radius: 1em; background-color: rgba(255,255,255,0.5); display: flex;
+			align-items: center;">
+				<h2>Adquiere con nosotros tus implementosdeportivos</h2>	
+			</div>
 		</div>
 	  </div>
 </section>
@@ -203,10 +197,6 @@ var swiper = new Swiper('.principalSlide', {
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
   },
 });
 </script>
