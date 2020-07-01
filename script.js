@@ -1,7 +1,7 @@
 var swiper = new Swiper('.sw-icons', {
   slidesPerView: 1,
-  spaceBetween: 5,
-  // init: false,
+  spaceBetween: 1,
+  init: true,
   pagination: {
     clickable: true,
   },
@@ -19,8 +19,10 @@ var swiper = new Swiper('.sw-icons', {
       spaceBetween: 50,
     },
 },
+normalizeSlideIndex: true,
 autoplay: {
 delay: 2500,
 disableOnInteraction: false,
 },
+speed: 300,
 });

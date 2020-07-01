@@ -1,7 +1,4 @@
-
-
-let receptorNumber="573166245103";
-
+let receptorNumber="573207678605";
 document.querySelector('#submit').addEventListener('click',function(){
     
     let name = document.querySelector('#name').value;
