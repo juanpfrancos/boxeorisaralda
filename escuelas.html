@@ -81,28 +81,36 @@ logged_out_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz part
       </div>
     </nav>
   
-  <section class="container section">
-    <div class="swiper-escuelas">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="src/escuelas/01.png" alt="joven boxeador"></div>
-        <div class="swiper-slide"><img src="src/escuelas/02.png" alt="joven boxeador"></div>
-        <div class="swiper-slide"><img src="src/escuelas/03.png" alt="joven boxeador"></div>
-        <div class="swiper-slide"><img src="src/escuelas/04.png" alt="joven boxeador"></div>
-        <div class="swiper-slide"><img src="src/escuelas/05.png" alt="joven boxeador"></div>
-        <div class="swiper-slide"><img src="src/escuelas/06.png" alt="joven boxeador"></div>
-        <div class="swiper-slide"><img src="src/escuelas/07.png" alt="joven boxeador"></div>
-        <div class="swiper-slide"><img src="src/escuelas/08.png" alt="joven boxeador"></div>
-        <div class="swiper-slide"><img src="src/escuelas/09.png" alt="joven boxeador"></div>
-        <div class="swiper-slide"><img src="src/escuelas/10.png" alt="joven boxeador"></div>
-        <div class="swiper-slide"><img src="src/escuelas/11.png" alt="joven boxeador"></div>
-        <div class="swiper-slide"><img src="src/escuelas/12.png" alt="joven boxeador"></div>
-        <div class="swiper-slide"><img src="src/escuelas/13.png" alt="joven boxeador"></div>
-        <div class="swiper-slide"><img src="src/escuelas/14.png" alt="joven boxeador"></div>
-        <div class="swiper-slide"><img src="src/escuelas/15.png" alt="joven boxeador"></div>
-        <div class="swiper-slide"><img src="src/escuelas/16.png" alt="joven boxeador"></div>
+    <section class="container section">
+      <div class="swiper-escuelas">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide ">
+            <img src="src/escuelas/01.png" alt="joven boxeador">
+            <img src="src/escuelas/02.png" alt="joven boxeador">
+            <img src="src/escuelas/03.png" alt="joven boxeador">
+            <img src="src/escuelas/04.png" alt="joven boxeador">
+          </div>
+          <div class="swiper-slide ">
+            <img src="src/escuelas/05.png" alt="joven boxeador">
+            <img src="src/escuelas/06.png" alt="joven boxeador">
+            <img src="src/escuelas/07.png" alt="joven boxeador">
+            <img src="src/escuelas/08.png" alt="joven boxeador">
+          </div>
+          <div class="swiper-slide ">
+            <img src="src/escuelas/09.png" alt="joven boxeador">
+            <img src="src/escuelas/10.png" alt="joven boxeador">
+            <img src="src/escuelas/11.png" alt="joven boxeador">
+            <img src="src/escuelas/12.png" alt="joven boxeador">
+          </div>
+          <div class="swiper-slide ">
+            <img src="src/escuelas/13.png" alt="joven boxeador">
+            <img src="src/escuelas/14.png" alt="joven boxeador">
+            <img src="src/escuelas/15.png" alt="joven boxeador">
+            <img src="src/escuelas/16.png" alt="joven boxeador">
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
   <section class="section has-background-white container">
     <div class="sw-icons">
       <div class="swiper-wrapper">
@@ -144,17 +152,15 @@ logged_out_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz part
 <script src="script.js"></script>
 <script>
   var swiper = new Swiper('.swiper-escuelas', {
-  slidesPerView: 4,
   spaceBetween: 30,
-  centeredSlides: true,
+  effect: 'fade',
   pagination: {
-    el: '.swiper-pagination',
     clickable: true,
   },
   autoplay: {
-    delay: 2500,
+    delay: 3000,
     disableOnInteraction: false,
-    },
+  },
 });
 </script>
 </body>
