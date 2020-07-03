@@ -5,14 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Liga Risaraldense de Boxeo</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css'>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet"> 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
-  <body class="has-background-white">
-    <div id="fb-root"></div>
+<body>
+<!--FB Chat-->
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
 <script>
   window.fbAsyncInit = function() {
 	FB.init({
@@ -27,8 +29,7 @@
   js = d.createElement(s); js.id = id;
   js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- Your Chat Plugin code -->
 <div class="fb-customerchat"
@@ -38,7 +39,7 @@ theme_color="#13cf13"
 logged_in_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz parte de esta gran familia!🥊 "
 logged_out_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz parte de esta gran familia!🥊 ">
 </div>
-<style type="text/css" media="screen">
+	<style type="text/css" media="screen">
 		body {
 		  display: flex;
 		  min-height: 100vh;
@@ -48,108 +49,274 @@ logged_out_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz part
 		#wrapper {
 		  flex: 1;
 		}
-</style>
-    <nav class="navbar navbar-expand-lg navbar-dark is-dark static-top">
-      <div class="container">
-        <a class="navbar-brand" href="">
-          <img src="src/logos/logo.png" class="img-fluid" alt="Responsive image">
-          </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-          <a class="nav-link" href="index.html">Inicio
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item active">
-          <a class="nav-link" href="escuelas.html">Escuelas de Formación</a>
-          </li>
-          <li class="nav-item">
-          <a class="nav-link" href="reconocimientos.html">Reconocimientos</a>
-          </li>
-          <li class="nav-item">
-          <a class="nav-link" href="implementos.html">Implementos Deportivos</a>
-          </li>
-          <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contacto</a>
-          </li>
-        </ul>
+	</style>
+<!--Menu-->
+<nav class="navbar navbar-expand-lg navbar-dark is-dark static-top">
+	<div class="container">
+	  <a class="navbar-brand" href="">
+			<img src="src/logos/logo.png" class="img-fluid" alt="Responsive image">
+		  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+	  <div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+		  <li class="nav-item">
+			<a class="nav-link" href="index.html">Inicio
+				  <span class="sr-only">(current)</span>
+				</a>
+		  </li>
+		  <li class="nav-item active">
+			<a class="nav-link" href="escuelas.html">Escuelas de Formación</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="reconocimientos.html">Reconocimientos</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="implementos.html">Implementos Deportivos</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="contact.html">Contacto</a>
+		  </li>
+		</ul>
+	  </div>
+	</div>
+</nav>
+<!--Menu-->
+<!--Slider-->
+<section class="section" id="bgfrank">
+	<div class="columns is-centered">
+		<div class="swiper-container is-one-third has-text-centered">
+      <h3 style="color: white;">Boxeo</h3>
+			<h5 style="color: white;"></h5>
+      <div class="swiper-wrapper" >
+				<div class="swiper-slide"  style="background-color:transparent;">
+				  <img src="src/escuelas/Boxeo/01.png" alt="">
+				</div>
+				<div class="swiper-slide"  style="background-color:transparent;">
+          <img src="src/escuelas/Boxeo/02.png" alt="">
         </div>
-      </div>
-    </nav>
-  
-    <section class="container section">
-      <div class="swiper-escuelas">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide ">
-            <img src="src/escuelas/01.png" alt="joven boxeador">
-            <img src="src/escuelas/02.png" alt="joven boxeador">
-            <img src="src/escuelas/03.png" alt="joven boxeador">
-            <img src="src/escuelas/04.png" alt="joven boxeador">
-          </div>
-          <div class="swiper-slide ">
-            <img src="src/escuelas/05.png" alt="joven boxeador">
-            <img src="src/escuelas/06.png" alt="joven boxeador">
-            <img src="src/escuelas/07.png" alt="joven boxeador">
-            <img src="src/escuelas/08.png" alt="joven boxeador">
-          </div>
-          <div class="swiper-slide ">
-            <img src="src/escuelas/09.png" alt="joven boxeador">
-            <img src="src/escuelas/10.png" alt="joven boxeador">
-            <img src="src/escuelas/11.png" alt="joven boxeador">
-            <img src="src/escuelas/12.png" alt="joven boxeador">
-          </div>
-          <div class="swiper-slide ">
-            <img src="src/escuelas/13.png" alt="joven boxeador">
-            <img src="src/escuelas/14.png" alt="joven boxeador">
-            <img src="src/escuelas/15.png" alt="joven boxeador">
-            <img src="src/escuelas/16.png" alt="joven boxeador">
-          </div>
+        <div class="swiper-slide"  style="background-color:transparent;">
+          <img src="src/escuelas/Boxeo/03.png" alt="">
         </div>
-      </div>
-    </section>
-  <section class="section has-background-white container">
-    <div class="sw-icons">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <a href="https://www.mindeporte.gov.co/" target="_blank" rel="noopener noreferrer"><img src="./src/logos/01.png" alt=""></a>
-          <a href="https://www.risaralda.gov.co/" target="_blank" rel="noopener noreferrer"><img src="./src/logos/02.png" alt=""></a>
-          <a href="http://pereira.gov.co/Paginas/Default.aspx" target="_blank" rel="noopener noreferrer"><img src="./src/logos/03.png" alt=""></a>
+        <div class="swiper-slide"  style="background-color:transparent;">
+          <img src="src/escuelas/Boxeo/04.png" alt="">
         </div>
-        <div class="swiper-slide">
-          <a href="http://www.coc.org.co/category/todos-los-deportes/boxeo/" target="_blank" rel="noopener noreferrer"><img src="./src/logos/04.png" alt=""></a>
-          <a href="http://fecolbox.com/" target="_blank" rel="noopener noreferrer"><img src="./src/logos/05.png" alt=""></a>
-          <a href="https://www.wbaboxing.com/wba-fedelatin-rankings" target="_blank" rel="noopener noreferrer"><img src="./src/logos/06.png" alt=""></a>
+        <div class="swiper-slide"  style="background-color:transparent;">
+          <img src="src/escuelas/Boxeo/05.png" alt="">
         </div>
-        <div class="swiper-slide">
-          <a href="https://www.aiba.org/" target="_blank" rel="noopener noreferrer"><img src="./src/logos/08.png" alt=""></a>
-          <a href="https://www.wboboxing.com/" target="_blank" rel="noopener noreferrer"><img src="./src/logos/09.png" alt=""></a>
-          <a href="https://www.wbaboxing.com/es/" target="_blank" rel="noopener noreferrer"><img src="./src/logos/07.png" alt=""></a>
+        <div class="swiper-slide"  style="background-color:transparent;">
+          <img src="src/escuelas/Boxeo/06.png" alt="">
         </div>
-      </div>
-    </div>
-  </section>
-  
-  <footer class="has-background-dark">
-    <div class="footer-copyright">
-      <div class="container has-text-centered">
-        <p style="color: white; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black; padding-top: 1em;">Liga Risaraldense de Boxeo - Coliseo Mayor de Pereira - Contacto: 320 7678605 - 316 6441104</p>
-          <p style="color: white; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;">© Copyright 2020. Todos los Derechos Reservados | Desarrollado por <a style="  -webkit-text-stroke-width: 1px;
-          -webkit-text-stroke-color: black;" href="https://juanpfrancos.me">Juanpfrancos</a></p>
-      </div>
-      </div>
-  </footer>
+        <div class="swiper-slide"  style="background-color:transparent;">
+          <img src="src/escuelas/Boxeo/07.png" alt="">
+        </div>
+			</div>
+		</div>
+	</div>
+</section>
 
-<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<section class="section" id="bgjenny">
+	<div class="columns is-centered">
+		<div class="swiper-container is-one-third has-text-centered">
+      <h3 style="color: white;">Defensa Personal</h3>
+			<h5 style="color: white; "></h5>
+			<div class="swiper-wrapper" >
+				<div class="swiper-slide" style="background-color:transparent;">
+					<img src="src/escuelas/Defensa/02.png" alt="">
+				</div>
+				<div class="swiper-slide" style="background-color:transparent;">
+					<img src="src/Jescuelas/Defensa/03.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section" id="bgjenny">
+	<div class="columns is-centered">
+		<div class="swiper-container is-one-third has-text-centered">
+      <h3 style="color: white;">Hapkido</h3>
+			<h5 style="color: white; "></h5>
+			<div class="swiper-wrapper" >
+				<div class="swiper-slide" style="background-color:transparent;">
+					<img src="src/escuelas/Hapkido/01.png" alt="">
+				</div>
+				<div class="swiper-slide" style="background-color:transparent;">
+					<img src="src/escuelas/Hapkido/02.png" alt="">
+				</div>
+				<div class="swiper-slide" style="background-color:transparent;">
+					<img src="src/escuelas/Hapkido/03.png" alt="">
+        </div>
+        <div class="swiper-slide" style="background-color:transparent;">
+					<img src="src/escuelas/Hapkido/04.png" alt="">
+        </div>
+        <div class="swiper-slide" style="background-color:transparent;">
+					<img src="src/escuelas/Hapkido/05.png" alt="">
+        </div>
+        <div class="swiper-slide" style="background-color:transparent;">
+					<img src="src/escuelas/Hapkido/06.png" alt="">
+        </div>
+        <div class="swiper-slide" style="background-color:transparent;">
+					<img src="src/escuelas/Hapkido/07.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section" id="bgjenny">
+	<div class="columns is-centered">
+		<div class="swiper-container is-one-third has-text-centered">
+      <h3 style="color: white;">Jiu Jistsu</h3>
+			<h5 style="color: white; "></h5>
+			<div class="swiper-wrapper" >
+				<div class="swiper-slide" style="background-color:transparent;">
+					<img src="src/escuelas/Jiu-Jitsu/01.png" alt="">
+				</div>
+				<div class="swiper-slide" style="background-color:transparent;">
+					<img src="src/escuelas/Jiu-Jitsu/02.png" alt="">
+				</div>
+				<div class="swiper-slide" style="background-color:transparent;">
+					<img src="src/escuelas/Jiu-Jitsu/03.png" alt="">
+        </div>
+        <div class="swiper-slide" style="background-color:transparent;">
+					<img src="src/escuelas/Jiu-Jitsu/04.png" alt="">
+				</div>
+				<div class="swiper-slide" style="background-color:transparent;">
+					<img src="src/escuelas/Jiu-Jitsu/05.png" alt="">
+				</div>
+				<div class="swiper-slide" style="background-color:transparent;">
+					<img src="src/escuelas/Jiu-Jitsu/06.png" alt="">
+        </div>
+        <div class="swiper-slide" style="background-color:transparent;">
+					<img src="src/escuelas/Jiu-Jitsu/07.png" alt="">
+				</div>
+				<div class="swiper-slide" style="background-color:transparent;">
+					<img src="src/escuelas/Jiu-Jitsu/08.png" alt="">
+				</div>
+				<div class="swiper-slide" style="background-color:transparent;">
+					<img src="src/escuelas/Jiu-Jitsu/09.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section" id="bgjenny">
+	<div class="columns is-centered">
+		<div class="swiper-container is-one-third has-text-centered">
+      <h3 style="color: white;">MMA</h3>
+			<h5 style="color: white; "></h5>
+			<div class="swiper-wrapper" >
+				<div class="swiper-slide" style="background-color:transparent;">
+					<img src="src/escuelas/Mixtas/01.png" alt="">
+				</div>
+				<div class="swiper-slide" style="background-color:transparent;">
+					<img src="src/escuelas/Mixtas/02.png" alt="">
+				</div>
+				<div class="swiper-slide" style="background-color:transparent;">
+					<img src="src/escuelas/Mixtas/03.png" alt="">
+        </div>
+        <div class="swiper-slide" style="background-color:transparent;">
+					<img src="src/escuelas/Mixtas/04.png" alt="">
+        </div>
+        <div class="swiper-slide" style="background-color:transparent;">
+					<img src="src/escuelas/Mixtas/05.png" alt="">
+        </div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="section has-background-white container">
+	<div class="sw-icons">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<a href="https://www.mindeporte.gov.co/" target="_blank" rel="noopener noreferrer"><img src="./src/logos/01.png" alt=""></a>
+				<a href="https://www.risaralda.gov.co/" target="_blank" rel="noopener noreferrer"><img src="./src/logos/02.png" alt=""></a>
+				<a href="http://pereira.gov.co/Paginas/Default.aspx" target="_blank" rel="noopener noreferrer"><img src="./src/logos/03.png" alt=""></a>
+			</div>
+			<div class="swiper-slide">
+				<a href="http://www.coc.org.co/category/todos-los-deportes/boxeo/" target="_blank" rel="noopener noreferrer"><img src="./src/logos/04.png" alt=""></a>
+				<a href="http://fecolbox.com/" target="_blank" rel="noopener noreferrer"><img src="./src/logos/05.png" alt=""></a>
+				<a href="https://www.wbaboxing.com/wba-fedelatin-rankings" target="_blank" rel="noopener noreferrer"><img src="./src/logos/06.png" alt=""></a>
+			</div>
+			<div class="swiper-slide">
+				<a href="https://www.aiba.org/" target="_blank" rel="noopener noreferrer"><img src="./src/logos/08.png" alt=""></a>
+				<a href="https://www.wboboxing.com/" target="_blank" rel="noopener noreferrer"><img src="./src/logos/09.png" alt=""></a>
+				<a href="https://www.wbaboxing.com/es/" target="_blank" rel="noopener noreferrer"><img src="./src/logos/07.png" alt=""></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="has-background-dark">
+	<div class="footer-copyright">
+		<div class="container has-text-centered">
+			<p style="color: white; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black; padding-top: 1em;">Liga Risaraldense de Boxeo - Coliseo Mayor de Pereira - Contacto: 320 7678605 - 316 6441104</p>
+		    <p style="color: white; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;">© Copyright 2020. Todos los Derechos Reservados | Desarrollado por <a style="  -webkit-text-stroke-width: 1px;
+				-webkit-text-stroke-color: black;" href="https://juanpfrancos.me">Juanpfrancos</a></p>
+		</div>
+	  </div>
+</footer>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script src="script form.js"></script>
 <script src="script.js"></script>
+<script> 
+	var swiper = new Swiper('.swiper-container', {
+	  spaceBetween: 30,
+	  effect: 'fade',
+	  pagination: {
+		clickable: true,
+	  },
+	  autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	  },
+	  navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	  },
+	});
+	</script>
+</body>
+</html>
+
+<!--
+<section class="container section">
+  <div class="swiper-escuelas">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide ">
+        <img src="src/escuelas/01.png" alt="joven boxeador">
+        <img src="src/escuelas/02.png" alt="joven boxeador">
+        <img src="src/escuelas/03.png" alt="joven boxeador">
+        <img src="src/escuelas/04.png" alt="joven boxeador">
+      </div>
+      <div class="swiper-slide ">
+        <img src="src/escuelas/05.png" alt="joven boxeador">
+        <img src="src/escuelas/06.png" alt="joven boxeador">
+        <img src="src/escuelas/07.png" alt="joven boxeador">
+        <img src="src/escuelas/08.png" alt="joven boxeador">
+      </div>
+      <div class="swiper-slide ">
+        <img src="src/escuelas/09.png" alt="joven boxeador">
+        <img src="src/escuelas/10.png" alt="joven boxeador">
+        <img src="src/escuelas/11.png" alt="joven boxeador">
+        <img src="src/escuelas/12.png" alt="joven boxeador">
+      </div>
+      <div class="swiper-slide ">
+        <img src="src/escuelas/13.png" alt="joven boxeador">
+        <img src="src/escuelas/14.png" alt="joven boxeador">
+        <img src="src/escuelas/15.png" alt="joven boxeador">
+        <img src="src/escuelas/16.png" alt="joven boxeador">
+      </div>
+    </div>
+  </div>
+</section>
 <script>
   var swiper = new Swiper('.swiper-escuelas', {
   spaceBetween: 30,
@@ -163,5 +330,4 @@ logged_out_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz part
   },
 });
 </script>
-</body>
-</html>
+-->
