@@ -17,9 +17,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -100,16 +100,16 @@ logged_out_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz part
 	<div class="principalSlide">
 		<div class="swiper-wrapper">
 		  <div class="swiper-slide">
-			<img src="src/05.png" alt="">
+			<img src="src/05-min.png" alt="">
 		  </div>
 		  <div class="swiper-slide">
-			<img src="src/02.png" alt="">
+			<img src="src/02-min.png" alt="">
 		  </div>
 		  <div class="swiper-slide">
-			<img src="src/03.png" alt="">
+			<img src="src/03-min.png" alt="">
 		  </div>
 		  <div class="swiper-slide">
-			<img src="src/04.png" alt="">
+			<img src="src/04-min.png" alt="">
 		  </div>
 		</div>
 	</div>
@@ -129,12 +129,49 @@ logged_out_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz part
 	</div>
 </section>
 
+<section class="hero is-medium" style="background-color: black;">
+	<div class="entrenadores container">
+		<div class="swiper-wrapper">
+		  <div class="swiper-slide container" style="background-color: black; height: 300px;">
+			<div>
+				<p class="title" style="font-family: 'Lobster', cursive;text-align: center; color: white;">
+					"No tengo éxito cuando convierto a un tipo en campeón del mundo, tengo éxito cuando los convierto en campeón del mundo e independiente de mi"
+				</p>
+				<p class="subtitle" style="font-family: 'Lobster'; text-align: center; color: white;">
+					- Cua d Amato -
+				</p>
+			</div>
+		  </div>
+		  <div class="swiper-slide container" style="background-color: black; height: 300px;">
+			<div>
+				<p class="title" style="font-family: 'Lobster', cursive; text-align: center; color: white;">
+					"Odié cada minuto de entrenamiento, pero no paraba de repetirme: 'No renuncies, sufre ahora y vive el resto de tu vida como un campeón"
+				</p>
+				<p class="subtitle" style="font-family: 'Lobster'; text-align: center; color: white;">
+					- Muhammad Ali -
+				</p>
+			</div>
+		  </div>
+		  <div class="swiper-slide container" style="background-color: black; height: 300px;">
+			<div>
+				<p class="title" style="font-family: 'Lobster', cursive; text-align: center; color: white;">
+					"Todo lo puedo en Cristo que me fortalece"
+				</p>
+				<p class="subtitle" style="font-family: 'Lobster'; text-align: center; color: white;">
+					- Filipenses 4, 13 -
+				</p>
+			</div>
+		  </div>
+		</div>
+	</div>
+</section>
+
 <section class="section has-background-dark">
 	<div class="columns container">
 		<div class="column" style="background-image: url('/src/bg2.png'); display: flex; align-items: center; border-radius: 1em;">
 			<div style="height: auto; border-radius: 1em; background-color: rgba(255,255,255,0.5); display: flex;
 			align-items: center; padding:10%">
-				<a href="escuelas.html"><h2 style="text-shadow: 6px 6px 8px rgba(0,0,0,0.86);   -webkit-text-stroke-width: 1px;
+				<a href="escuelas.html" style="text-decoration: none;"><h2 style="text-shadow: 6px 6px 8px rgba(0,0,0,0.86);   -webkit-text-stroke-width: 1px;
 					-webkit-text-stroke-color: black;">Haz parte de nuestras escuelas de formación</h2></a>
 			</div>
 		</div>
@@ -142,7 +179,7 @@ logged_out_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz part
 		<div class="column" style="background-image: url('/src/bg.png'); display: flex;	align-items: center; border-radius: 1em;">
 			<div style="padding: 1em; height: auto; border-radius: 1em; background-color: rgba(255,255,255,0.5); display: flex;
 			align-items: center; padding:10%">
-				<a href="implementos.html"><h2 style="text-shadow: 6px 6px 8px rgba(0,0,0,0.86);  -webkit-text-stroke-width: 1px;
+				<a href="implementos.html" style="text-decoration: none;"><h2 style="text-shadow: 6px 6px 8px rgba(0,0,0,0.86);  -webkit-text-stroke-width: 1px;
 					-webkit-text-stroke-color: black;;">Adquiere con nosotros tus implementos deportivos</h2></a>	
 			</div>
 		</div>
@@ -170,8 +207,19 @@ logged_out_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz part
 					</div>
 					<div class="column has-text-centered">
 						<figure class="image is-200x200">
+							<img src="./src/Entrenadores/Natalia.png" class="is-rounded" alt="Entrenador" style="border: 1em solid white">
+							<h4 style="color: white; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;">Natalia Yenifer Escobar</h4>
+							<h5 style="color: white; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;">Secretaria</h5>
+						</figure>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide" style="background-image: url('https://i.pinimg.com/originals/81/7e/77/817e772cb87d9da42c666aef75f8279f.jpg');">
+				<div class="columns container">
+					<div class="column has-text-centered">
+						<figure class="image is-200x200">
 							<img src="./src/Entrenadores/Sandino.png" class="is-rounded" alt="Entrenador" style="border: 1em solid white">
-							<h4 style="color: white; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;">Sandino</h4>
+							<h4 style="color: white; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;">Maurice Sandino Vargas</h4>
 							<h5 style="color: white; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;">Entrenador Pereira</h5>
 						</figure>
 					</div>
@@ -182,10 +230,6 @@ logged_out_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz part
 							<h5 style="color: white; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;">Entrenador Dosquebradas</h5>
 						</figure>
 					</div>
-				</div>
-			</div>
-			<div class="swiper-slide" style="background-image: url('https://i.pinimg.com/originals/81/7e/77/817e772cb87d9da42c666aef75f8279f.jpg');">
-				<div class="columns container">
 					<div class="column has-text-centered">
 						<figure class="image is-200x200">
 							<img src="./src/Entrenadores/Jhonier.png" class="is-rounded" alt="Entrenador" style="border: 1em solid white">
@@ -193,6 +237,10 @@ logged_out_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz part
 							<h5 style="color: white; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;">Entrenador Santa Rosa de Cabal</h5>
 						</figure>
 					</div>
+				</div>
+			</div>
+			<div class="swiper-slide" style="background-image: url('https://i.pinimg.com/originals/81/7e/77/817e772cb87d9da42c666aef75f8279f.jpg');">
+				<div class="columns container">
 					<div class="column has-text-centered">
 						<figure class="image is-200x200">
 							<img src="./src/Entrenadores/Esteban.png" class="is-rounded" alt="Entrenador" style="border: 1em solid white">
@@ -210,7 +258,7 @@ logged_out_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz part
 					<div class="column has-text-centered">
 						<figure class="image is-200x200">
 							<img src="./src/Entrenadores/Juan.png" class="is-rounded" alt="Entrenador" style="border: 1em solid white">
-							<h4 style="color: white; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;">Juan</h4>
+							<h4 style="color: white; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;">Juan Esteban López </h4>
 							<h5 style="color: white; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;">Entrenador Funcional</h5>
 						</figure>
 					</div>
@@ -253,9 +301,8 @@ logged_out_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz part
 </footer>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 <script  src="script.js"></script>
 <script> 
 var swiper = new Swiper('.principalSlide', {

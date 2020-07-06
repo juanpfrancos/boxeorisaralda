@@ -19,13 +19,13 @@
     align-items: center;
   }
   #bgfrank{
-    background-image: url('/src/Dunkan/full.png');
+    background-image: url('/src/ring.png');
   }
   #bgjenny{
-    background-image: url('/src/Jenny/full.png');
+    background-image: url('/src/dark.png');
   }
   #bgdunkan{
-    background-image: url('/src/Dunkan/full.png');
+    background-image: url('/src/darkDunk.png');
   }
   #bghero{
     background-image: url('/src/full.png');
