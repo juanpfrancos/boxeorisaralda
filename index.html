@@ -130,7 +130,7 @@ logged_out_greeting="¿Te gustaría entrenar con nosotros? ¡Anímate y haz part
 </section>
 
 <section class="hero is-medium" style="background-color: black;">
-	<div class="entrenadores container">
+	<div class="quotes container">
 		<div class="swiper-wrapper">
 		  <div class="swiper-slide container" style="background-color: black; height: 300px;">
 			<div>
@@ -325,6 +325,18 @@ var swiper = new Swiper('.entrenadores', {
   },
   autoplay: {
     delay: 5000,
+    disableOnInteraction: false,
+  },
+});
+
+var swiper = new Swiper('.quotes', {
+  spaceBetween: 30,
+  effect: 'fade',
+  pagination: {
+    clickable: true,
+  },
+  autoplay: {
+    delay: 7000,
     disableOnInteraction: false,
   },
 });
